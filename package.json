@@ -1,0 +1,16 @@
+{
+  "name": "osp",
+  "version": "1.0.0",
+  "description": "Objectifier with Spacial Programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'test'",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdiazsmith/Tellart_Arm.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
