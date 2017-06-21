@@ -12,5 +12,8 @@
     "url": "git+https://github.com/fdiazsmith/Tellart_Arm.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^2.0.3"
+  }
 }
