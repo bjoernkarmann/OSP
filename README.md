@@ -1,8 +1,8 @@
-## OSP - Objectifier with Spacial Programming
+# OSP - Objectifier with Spacial Programming
 
 This is a guide to install and run a screen-based demo of the [Objectifier](https://http://bjoernkarmann.dk/objectifier).
 
-##Run
+## Run
 
 Run the **ConvnetClassifier** app
 
@@ -24,16 +24,17 @@ http://localhost:3000
 ```
 
 
-##Getting Started 
+## Getting Started 
 
 This guide will explain how to setup the OSP both on the hardware and software side. 
 
-###Hardwhere:
+### Hardwhere:
 - Mac computer (code will run here)
 - Webcam (can be integrated)
 - Phone (controller will run here)
 
-###Softwhere:
+### Softwhere:
+
 *Part 1*
 
 - Install the latest version of [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
