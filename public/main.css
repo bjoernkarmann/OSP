@@ -1,0 +1,46 @@
+
+html, body {
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: #fff;
+	-webkit-user-select: none;
+	overflow: hidden;
+}
+
+@font-face {
+    font-family: 'gt_cinetype_trialbold';
+    src: url('font/gt-cinetype-trial-bold-webfont.woff2') format('woff2'),
+         url('font/gt-cinetype-trial-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+	font-family: "gt_cinetype_trialbold";
+	font-size: 16pt;
+	line-height: 25px;
+}
+
+#wrapper {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.stats {
+	position: relative;
+	float: left;
+	width: 50%;
+	text-align: center;
+	margin-top: 5%;
+}

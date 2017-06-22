@@ -1,22 +1,18 @@
-var http = require('http');
-var fs = require('fs');
+var express = require('express');
+var app = express();
+var server = app.listen(3000);
 
-// Loading the index file . html displayed to the client
-var server = http.createServer(function(req, res) {
-    // console.log(req.url);
-    fs.readFile("./client/index.html", 'utf-8', function(error, content) {
-        res.writeHead(200);
-        res.end(content);
-    });
-});
-// Loading socket.io
+app.use(express.static('./public'));
+
+console.log('Socket server is running');
+
 var io = require('socket.io').listen(server);
 
 // When a client connects, we note it in the console
-io.sockets.on('connection', function (socket) {
+io.on('connection', function (socket) {
     console.log('A client is connected!');
     socket.emit('message', 'You are connected!');
-    buffer = [null];
+    socket.on('osp', function (data) {
+      console.log(data);
+    });
 });
-
-server.listen(8080);
