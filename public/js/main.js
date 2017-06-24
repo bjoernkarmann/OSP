@@ -9,7 +9,7 @@ var w = window.innerWidth;
 // 4 = clear training
 
 function setup(){
-    socket = io.connect('http://localhost:3000');
+    socket = io.connect();
 };
 
 function mousePressed(){

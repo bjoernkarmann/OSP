@@ -4,18 +4,19 @@
   "description": "Objectifier with Spacial Programming",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'test'",
     "start": "node server/app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fdiazsmith/Tellart_Arm.git"
+    "url": "git+https://github.com/bjoernkarmann/OSP"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3",
     "node-osc": "^2.1.0",
-    "socket.io": "^2.0.3"
+    "osc": "^2.2.0",
+    "socket.io": "^2.0.3",
+    "socket.io-emitter": "^3.0.1"
   }
 }
