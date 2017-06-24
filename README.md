@@ -11,14 +11,15 @@ This is a guide to install and run a screen-based demo of the [Objectifier](http
 Open terminal on Mac
 
 ```
-ssh pi@osp.local
+$ ssh pi@osp.local
 ```
 Pasword: **koding6000**
 
 Run this command:
 
 ```
-npm start
+$ cd osp/osc-relay
+$ npm start
 ```
 
 *Part 2 - ml4a*
@@ -30,13 +31,13 @@ Run the **ConvnetClassifier** app
 Open the terminal on Mac and cd to the path of the **osp** folder:
 
 ```
-cd PATH-TO-FOLDER
+$ cd PATH-TO-FOLDER
 ```
 
 Start the server:
 
 ```
-npm start
+$ npm start
 ```
 *Part 4 - phone*
 
@@ -98,23 +99,38 @@ This step is only required if a backup of the raspberry pi is needed
 The first command updates firmware and may require reboot.
 
 ```
-sudo rpi-update
-sudo apt-get update
-sudo apt-get upgrade
+$ sudo rpi-update
+$ sudo apt-get update
+$ sudo apt-get upgrade
 ```
 
-Install node
+*Part 3 - Inastall*
+
+Install latest version of node.js
 
 ```
-sudo apt-get install nodejs npm
+$ sudo apt-get install nodejs npm
 ```
-
-*Part 3 - *
 
 Download osc-relay
 
 ```
-git clone https://github.com/.git
+$ git clone https://github.com/bjoernkarmann/OSP.git 
+```
+Go to the osc-relay folder
+
+```
+$ cd osc-relay
+```
+Now install dependencies
+
+```
+$ npm install
+```
+Run the node app.js
+
+```
+$ npm start
 ```
 
 ## License
