@@ -26,7 +26,7 @@ oscPort.open();
 
 var local  = "127.0.0.1";
 var ml4a   = 12345;
-var remote = "127.0.0.1" //ospv2.local
+var remote = "ospv2.local" //ospv2.local
 var osp    = 9998;
 var state;
 

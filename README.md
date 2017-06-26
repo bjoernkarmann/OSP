@@ -73,9 +73,11 @@ This guide will explain how to setup the OSP both on the hardware and software s
 - Install the latest version of [openFrameworks](http://openframeworks.cc/download/)<br>*Uses this [guide](http://openframeworks.cc/setup/xcode/) to for installing openFrameworks in Xcode*
 - Download the [ml4a-ofx](https://github.com/ml4a/ml4a-ofx/) application
 - Drag the **ml4a-ofx** folder into the **apps** folder of openFrameworks
-- Open the **ConvnetClassifier.xcodeproj** file in Xcode
-- Run the **ConvnetClassifier**
-- Find and open the finished app under the folder **ConvnetClassifier/bin**
+- Navigate to **ml4a-ofx/apps/**
+- Download this repo and move the custom **ml4a/ConvnetClassifirIp** folder to the openFrameworks **ml4a-ofx/apps/** folder
+- Open the **ConvnetClassifierIp.xcodeproj** file in Xcode
+- Run the **ConvnetClassifierIp**
+- Find and open the finished app under the folder **ConvnetClassifierIp/bin**
 
 *Part 2 - server*
 
@@ -104,34 +106,10 @@ $ sudo apt-get update
 $ sudo apt-get upgrade
 ```
 
-*Part 3 - Inastall*
+*Part 3 - Install osc-rpio*
 
-Install latest version of node.js
+- Follow this [instructions](https://github.com/bjoernkarmann/osc-gpio)
 
-```
-$ sudo apt-get install nodejs npm
-```
-
-Download osc-relay
-
-```
-$ git clone https://github.com/bjoernkarmann/OSP.git 
-```
-Go to the osc-relay folder
-
-```
-$ cd osc-relay
-```
-Now install dependencies
-
-```
-$ npm install
-```
-Run the node app.js
-
-```
-$ npm start
-```
 
 ## License
 
