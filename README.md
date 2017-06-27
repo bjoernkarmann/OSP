@@ -18,17 +18,19 @@ Pasword: **koding6000**
 Run this command:
 
 ```
-$ cd osp/osc-relay
-$ npm start
+$ mkdir /tmp/stream
+$ raspistill --nopreview -w 320 -h 240 -q 10 -o /tmp/stream/pic.jpg -tl 100 -t 99999999 -th 0:0:0 &
+LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
 ```
+See result on ```osp.local:8080/?action=stream```
 
 *Part 2 - ml4a*
 
-Run the **ConvnetClassifier** app
+Run the **ConvnetClassifierIp** app
 
 *Part 3 - server*
 
-Open the terminal on Mac and cd to the path of the **osp** folder:
+Open the terminal and cd to the **osp** folder:
 
 ```
 $ cd PATH-TO-FOLDER
@@ -109,7 +111,6 @@ $ sudo apt-get upgrade
 *Part 3 - Install osc-rpio*
 
 - Follow this [instructions](https://github.com/bjoernkarmann/osc-gpio)
-
 
 ## License
 
